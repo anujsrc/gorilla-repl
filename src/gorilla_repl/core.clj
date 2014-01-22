@@ -6,7 +6,7 @@
   (:use compojure.core)
   (:require [compojure.handler :as handler]
             [compojure.route :as route]
-            [ring.adapter.jetty :as jetty]
+            [ring.server.standalone :as server]
             [ring.middleware.keyword-params :as keyword-params]
             [ring.middleware.nested-params :as nested-params]
             [ring.middleware.params :as params]
@@ -27,5 +27,14 @@
            (ANY "/repl" {:as req} (drawbridge req))
            (route/resources "/"))
 
+(defn run-gorilla-server
+  []
+  (println "Ctrl+C to exit.")
+  (server/serve app-routes {:port          8080
+                            :join?         true
+                            :open-browser? true
+                            :browser-uri   "worksheet.html"
+                            :auto-reload?  false}))
+
 (defn -main []
-  (jetty/run-jetty app-routes {:port 8080 :join? false}))
+  (run-gorilla-server))

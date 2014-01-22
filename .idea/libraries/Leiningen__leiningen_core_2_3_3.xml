@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: leiningen-core:2.3.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/leiningen-core/leiningen-core/2.3.3/leiningen-core-2.3.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

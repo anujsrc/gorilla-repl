@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.thnetos/cd-client:0.3.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/thnetos/cd-client/0.3.6/cd-client-0.3.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
