@@ -66,6 +66,13 @@
 </div>
 <div class="scroll-pad"></div>
 
+<!-- Dialogs -->
+
+<div class="file-dialog" data-bind="visible: fileDialogShown">
+    <h3>Filename:</h3>
+    <input type="text" name="filename" data-bind="focus: fileDialogShown">
+</div>
+
 <!-- Templates -->
 <script type="text/html" id="segment-template">
     <div data-bind="template: {name: renderTemplate}"></div>
@@ -100,8 +107,6 @@
         <div class="segment-footer"></div>
     </div>
 </script>
-
-<!-- Dialogs -->
 
 
 </body>

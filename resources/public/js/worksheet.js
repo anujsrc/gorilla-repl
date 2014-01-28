@@ -14,6 +14,8 @@ var worksheetWrapper = function (worksheet) {
 
     self.worksheet = ko.observable(worksheet);
 
+    self.fileDialogShown = ko.observable(false);
+
     return self;
 };
 

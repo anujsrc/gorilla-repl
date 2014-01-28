@@ -71,6 +71,38 @@ div.command-shortcut {
     color: #555555;
 }
 
+div.file-dialog {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    width: 500px;
+    height: 60px;
+    padding: 0;
+    margin-right: -250px;
+    margin-top: -30px;
+    background: #eeeeee;
+    box-shadow: 0 0 20px steelblue;
+    border-style: solid;
+    border-color: #888888;
+    border-width: 1px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+div.file-dialog h3 {
+    padding: 0;
+    margin: 3px;
+}
+
+div.file-dialog input {
+    font-size: 14px;
+    resize: none;
+    margin-left: 10px;
+    width: 475px;
+}
+
+
 h1 {
     margin-bottom: 0.3em;
 }
